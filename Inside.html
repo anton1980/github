@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title><$pagetitle/$> | <$websitename/$></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">   
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" name="viewport" />
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic,600italic,600|Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/libs.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>   
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+
+<body id="body" class="sec-page" data-cmsadmin-layout-base="true">
+		
+<div class="container">		
+	
+	<$include virtual="header.inc"/$>
+
+	<section id="featured" class="featured" data-cmsadmin-layout-content-extra="true">
+		<div class="featured-image full contents"><$region name="feature_a"$><$/region$></div>
+		<div class="featured-image width contents"><$region name="feature"$><$/region$></div>
+	
+		<div class="featured-text contents"><$region name="feature_b"$><$/region$></div>
+	</section>
+
+	<section id="content-container" class="content-container wrapper" data-cmsadmin-layout-wrapper="true">
+	    <article class="contents">
+	
+			<div id="main" class="main-content" data-cmsadmin-layout-content="true">
+				<$region name="main"$><$/region$>										
+							
+				<div class="halves">
+					<div class="left-col">
+						<$region name="sidebar"$><$/region$>
+					</div>
+					<div class="right-col">
+						<$region name="sidebar_a"$><$/region$>
+					</div>
+				</div> 
+	
+				<$region name="full"$><$/region$>
+			</div> 
+				
+		<br class="clear">	
+	    </article>
+	</section>
+
+	<$include virtual="footer.inc"/$>
+
+</div>
+
+</body>
+</html>
